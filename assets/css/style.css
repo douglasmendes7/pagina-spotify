@@ -1,0 +1,160 @@
+@import url('https://fonts.cdnfonts.com/css/gotham');
+:root {
+    --cor1: #1db954;
+    --cor2: #1ed760;
+    --cor3: #1eff00;
+    --cor4: #191414;
+
+    --fonte-spotify: 'Gotham', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #011001;
+    color: #fff;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/*------------------Cabeçario da Página-----------------*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 7%;
+}
+
+div {
+    max-width: 38%;
+    margin-top: 2.5%;
+}
+
+#primeiro-titulo {
+    font-family: var(--fonte-spotify);
+    font-size: max(25px, 3.2vw);
+    margin-left: 28%;
+    color: var(--cor1);
+}
+
+#segundo-titulo {
+    font-family: var(--fonte-spotify);
+    font-size: max(15px, 1.7vw);
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin-top: 90px;
+}
+
+li {
+    margin-right: 3vw;
+}
+
+a {
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    font-size: larger;
+}
+
+a:hover {
+    color: var(--cor1);
+}
+
+#inscrevase-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid var(--cor1);
+    width: 160px;
+    height: 50px;
+    margin-top: 65px;
+    margin-right: 30px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+#inscrevase-btn:hover {
+    background-color: var(--cor1);
+    color: #fff;
+}
+
+/*MediaQuery para tamanho inferior a 959x674*/
+
+@media all and (max-width:959px) {
+    header{
+        display: flex;
+        justify-content: space-around;
+        column-gap: 3%;
+    }
+    
+    div {
+        display: none;
+    }
+}
+
+/*-----------------Main da Página------------------*/
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 75px;
+}
+
+aside {
+    width: 35vw;
+    margin-right: 60px;
+}
+
+.destaque-cor {
+    color: var(--cor1);
+    font-size: max(30px, 3.2vw);
+    margin-bottom: 0;
+}
+
+.destaque {
+    font-size: max(30px, 3.2vw);
+    margin-top: 0;
+}
+
+p {
+    text-align: justify;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+img {
+    width: 45vw;
+    max-height: 250px;
+    display: inline-block;
+    margin-top: 100px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+input {
+    margin-top: 14px;
+    border: solid 3px var(--cor1);
+    border-radius: 20px;
+    height: 45px;
+}
+
+#enviar-btn {
+    background-color: var(--cor1);
+    border: var(--cor1);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#enviar-btn:hover {
+    background-color: #127936;
+}
